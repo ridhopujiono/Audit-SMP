@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700");
+
+:root {
+    --black: #010100;
+    --soft-black: #3d3d4e;
+    --soft-gray: #868b8e;
+    --gray: #EFEFF6;
+    --white: #ffffff;
+    --light-white-900: #f9f9f9;
+    --main: #2e8bc0;
+    --shadow: 0 0 10px -3px rgba(0, 0, 0, .1);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100vh;
+}
+
+body {
+    background-image: url(../assets/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+}
+
+.container {
+    background-color: var(--white);
+    width: 30%;
+    margin: 75px auto;
+    padding: 2em;
+    box-shadow: var(--shadow);
+    border-radius: 5px;
+}
+
+.title {
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--main);
+    text-align: center;
+}
+
+.subtitle {
+    font-size: .8em;
+    font-weight: 500;
+    color: var(--soft-gray);
+    text-align: center;
+}
+
+.formContainer {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: .8em;
+    font-weight: 400;
+    color: var(--soft-black);
+    margin-top: 1em;
+    border: solid 2px var(--gray);
+    border-radius: 5px;
+    padding: 15px;
+    box-shadow: var(--shadow);
+}
+
+.formButton {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    font-weight: 700;
+    color: var(--light-white-900);
+    border: none;
+    border-radius: 5px;
+    padding: 1em;
+    margin-top: 2em;
+    background-color: #2e8bc0;
+    cursor: pointer;
+    transition: ease-in-out .3s;
+}
+
+.formButton:hover {
+    background-color: var(--soft-black);
+}
+
+::placeholder {
+    font-family: "Poppins", Arial, Helvetica, sans-serif;
+    font-weight: 400;
+    opacity: 1; /* untuk pengguna firefox */
+}
+
+@media screen and (max-width: 970px) {
+    .container {
+        background-color: var(--white);
+        width: 50%;
+        margin: 75px auto;
+        padding: 2em;
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        background-color: var(--white);
+        width: 75%;
+        margin: 75px auto;
+        padding: 2em;
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width: 490px) {
+    .container {
+        background-color: var(--white);
+        width: 90%;
+        margin: 50px auto;
+        padding: 2em;
+        box-shadow: var(--shadow);
+        border-radius: 5px;
+    }
+}
